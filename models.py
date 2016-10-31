@@ -1,6 +1,9 @@
-#!/usr/bin/python
 # -*- coding: utf-8 -*-
-from django.db import models
+from __future__ import unicode_literals
+
+from django.db import models, transaction
+from django.db.models import Q
+from django.utils.encoding import python_2_unicode_compatible
 from django.utils.translation import ugettext_lazy as _
 
 # Please set the fields verbose_name always and db_index & related_name if needed.
